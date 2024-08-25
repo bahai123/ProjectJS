@@ -1,0 +1,1918 @@
+@charset "utf-8";
+/* CSS Document */
+.hashtag::before {
+    content: "#";
+}
+
+.page-template-login .ws-content,
+.page-template-member .ws-content,
+.page-template-lostpass .ws-content,
+.page-template-register .ws-content,
+.page-template-userorder .ws-content,
+.page-template-changepass .ws-content {
+    background: white;
+}
+.page-template-login .breadcrumb,
+.page-template-member .breadcrumb,
+.page-template-lostpass .breadcrumb,
+.page-template-register .breadcrumb,
+.page-template-userorder .breadcrumb,
+.page-template-changepass .breadcrumb {
+    margin-bottom: 30px;
+    background: var(--bg);
+}
+
+#login-form,
+#lostpass-form,
+#register-form {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    background: var(--bg);
+}
+.field-solcial,
+.box-icon.socials {
+    display: none;
+}
+.tx-bold {
+    font-weight: 700;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0;
+}
+
+.gender-list,
+.gender-list div {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.gender-list {
+    gap: 30px;
+    min-height: 40px;
+}
+.gender-list input,
+.gender-list label {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.ws-content {
+    padding-bottom: 50px;
+}
+.box-title {
+    margin: 0 0 30px;
+    text-align: center;
+}
+.post-title h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.box {
+    display: grid;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box-info .content-left,
+.box-info .content-right {
+    padding: 30px;
+}
+.box-info .content-right {
+    border-left: 1px solid #d3d3d3;
+}
+.box-info .form-field {
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    position: relative;
+}
+.box-info .form-field:not(.last) {
+    margin-bottom: 20px;
+}
+.box-info .form-label {
+    width: 25%;
+    margin-bottom: 5px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.box-info .form-label label {
+    margin: 0;
+    cursor: pointer;
+    font-weight: 400;
+}
+.box-info .form-input {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+.box-info .form-control {
+    min-height: 40px;
+    box-shadow: none;
+    padding-left: 12px;
+    border-color: #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.box-info .form-control:focus {
+    border-color: #3091ed;
+}
+.box-info .required .form-label label::after {
+    content: "*";
+    color: #d0021b;
+    margin-left: 3px;
+}
+.box-info .rememberme {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.box-info .rememberme .form-label,
+.box-info .rememberme .form-input {
+    margin: 0;
+    width: 100%;
+}
+.box-info .rememberme .form-label {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.box-info .buttons button {
+    width: 100%;
+    background: var(--c1);
+    border: 0;
+    color: white;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid var(--c1);
+}
+.box-info .buttons button:hover {
+    color: var(--c1);
+    background: white;
+}
+.box-info .socials {
+    margin: 40px 0 0;
+}
+.box-info .socials .line {
+    position: relative;
+    margin: 0 0 15px;
+}
+.box-info .socials .line::after {
+    top: 50%;
+    left: 0;
+    right: 0;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #d3d3d3;
+}
+.box-info .socials .line span {
+    display: inline-flex;
+    align-items: center;
+    background: var(--bg);
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    padding: 0 15px;
+}
+.box-info .socials .icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+.box-info .socials .icon img {
+    cursor: pointer;
+}
+#login-form .box-login .buttons {
+    margin-bottom: 0;
+}
+.not-register #login-form {
+    margin: auto;
+    max-width: 50%;
+}
+.not-register .box-login {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.box-note {
+    position: relative;
+}
+.box-note h3 {
+    font-size: 18px;
+    margin: 0 0 20px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.box-note ul {
+    list-style: none;
+    margin: 0 0 30px;
+}
+.box-note ul li:not(:last-child) {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.box-note ul li::before {
+    color: gray;
+    content: "\f00c";
+    margin-right: 10px;
+    font-family: "FontAwesome";
+}
+.box-note .btn-link a {
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 30px;
+    padding: 10px 50px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--c0);
+    background-color: var(--c2);
+    border: 1px solid var(--c2);
+    transition: all .3s ease;
+}
+.box-note .btn-link:focus,
+.box-note .btn-link:hover {
+    text-decoration: none;
+}
+.box-note .btn-link a:hover {
+    color: white;
+    background-color: var(--c1);
+    border: 1px solid var(--c1);
+}
+
+.box-register {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #d3d3d3;
+}
+.box-register .box {
+    border: 0;
+    border-radius: 0;
+}
+.box-register .box-foot {
+    padding: 30px;
+}
+.box-register .box-agree {
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    display: inline-flex;
+}
+.box-register .box-agree * {
+    margin: 0;
+    font-weight: 400;
+}
+.box-register .box-button .btn {
+    color: white;
+    margin: 0 12px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 10px 50px;
+    background: var(--c1);
+    text-transform: none;
+    border-radius: 30px;
+}
+.box-register .box-button .btn-reset {
+    color: gray;
+    background-color: #e9edf0;
+}
+.box-register .box-button .btn-reset::before {
+    content: "\f021";
+    font-weight: 400;
+    margin-right: 5px;
+    font-family: "FontAwesome";
+}
+.box-register .box-button .btn:hover {
+    color: white;
+    background: var(--c1);
+}
+.box-register .socials {
+    padding: 0 0 20px;
+    background: #f6f7f8;
+}
+.box-register .socials .line {
+    margin: 0 0 15px;
+    position: relative;
+}
+.box-register .socials .line span {
+    font-weight: 700;
+    align-items: center;
+    display: inline-flex;
+}
+.box-register .socials .icon {
+    gap: 20px;
+    align-items: center;
+    display: inline-flex;
+}
+.box-register .socials .icon * {
+    cursor: pointer;
+}
+
+.form-field select.form-control {
+	height: 40px;
+    text-indent: 30px;
+    padding-left: 0 !important;
+}
+
+.account-form {
+    overflow: hidden;
+    position: relative;
+	border-radius: 8px;
+    background: var(--bg);
+}
+.account-form .form-wrap {
+	width:100%;
+	display:table;
+	overflow:hidden;
+}
+.account-form .form-wrap .col-left,
+.account-form .form-wrap .col-right {
+	display:table-cell;
+	vertical-align:top;
+}
+.account-form .form-wrap .col-left {
+	width: 300px;
+	text-align: center;
+}
+.account-form .form-field {
+	overflow:hidden;
+	position:relative;
+	margin-bottom:10px;
+}
+.account-form .form-field .form-control {
+	height: 40px;
+	box-shadow: none;
+	border-radius: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.account-form .form-field::before {
+	top:10px;
+	left:10px;
+	color:#999999;
+	position:absolute;
+	font-family:FontAwesome;
+}
+.account-form .form-field {
+	margin-bottom: 15px;
+}
+.account-form .form-field .form-control {
+	padding-left:30px;
+}
+.account-form .form-row {
+	overflow: hidden;
+	margin-left: -10px;
+	margin-bottom: 15px;
+	margin-right: -10px;
+}
+.account-form .form-row .form-field {
+	margin-bottom:0 !important;
+	width:50%;
+	float:left;
+	padding:0 10px;
+}
+.account-form select.form-control {
+	height: 40px;
+}
+.account-form .form-row .form-field::before {
+	left:20px;
+}
+.account-form .col-left {
+	padding: 40px;
+	background: #f5f5f5;
+}
+.account-form .avatar {
+    gap: 15px;
+    display: grid;
+    align-items: center;
+}
+.account-form .avatar-img {
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    border-radius: 100%;
+    overflow: hidden;
+	position:relative;
+}
+.account-form .avatar-img img {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+	-webkit-transform:translate(-50%, -50%);
+	max-width:100%;
+	max-height:100%;
+}
+.account-form .account.col-right {
+	padding: 30px;
+	position: relative;
+}
+.account-form .avatar .username {
+	font-size: 20px;
+	font-weight: 700;
+}
+.account-form #btn-avatar {
+	margin: 0;
+    border: none;
+    outline: none;
+    color: white;
+    line-height: 20px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background: var(--c1);
+}
+.account-form #btn-avatar::before {
+	margin-right:5px;
+	font-family:FontAwesome;
+}
+.account-form .form-field.form-button {
+	margin-bottom:0 !important;
+}
+.account-form .button {
+    color: white;
+    font-weight: 700;
+    padding: 10px 50px;
+    border-radius: 30px;
+    background: var(--c1);
+    border: 1px solid var(--c1);
+}
+.account-form .button::before {
+    margin-right: 5px;
+    margin-right: 10px;
+    font-family: FontAwesome;
+}
+
+/* step-by-step style	 */
+.step-by-step {
+    text-align: center;
+}
+.step-by-step li {
+    padding: 0 25px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.step-by-step li:nth-child(2):before,
+.step-by-step li:nth-child(2)::after,
+.step-by-step li:nth-child(3):before,
+.step-by-step li:nth-child(3)::after {
+    top: 30%;
+    content: '';
+    height: 1px;
+    width: 200%;
+    display: block;
+    position: absolute;
+    background-color: darkgray;
+    transform: translate(-35%, -50%);
+}
+.step-by-step li a {
+    z-index: 20;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 60px;
+    position: relative;
+}
+.step-by-step li a::before {
+    top: 0;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    font-size: 20px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    background: white;
+    left: calc(50% - 25px);
+    font-family: "FontAwesome";
+    border: 1px solid darkgray;
+}
+.step-by-step li a:hover::before,
+.step-by-step li a.active::before {
+    color: white;
+    background: var(--c1);
+    border-color: var(--c1);
+}
+.step-by-step li a.icon-account::before {
+    content: '\f2bd';
+}
+.step-by-step li a.icon-changepass::before {
+    content: '\f084';
+}
+.step-by-step li a.icon-userorder::before {
+    content: '\f0ca';
+}
+
+.changepass-form {
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+	border-radius: 8px;
+    background: var(--bg);
+}
+.changepass-form .form-wrap {
+    gap: 15px;
+    margin: auto;
+    display: grid;
+	max-width: 50%;
+}
+.changepass-form .form-field {
+	display: flex;
+    align-items: center;
+}
+.changepass-form .form-field .form-label {
+    width: 160px;
+}
+.changepass-form .form-field .form-label label {
+    margin: 0;
+    font-weight: 400;
+}
+.changepass-form .form-field .form-input {
+    width: calc(100% - 160px);
+}
+.changepass-form .form-field .form-control {
+	height: 40px;
+	box-shadow: none;
+	border-radius: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.changepass-form .button {
+    color: white;
+    font-weight: 700;
+    padding: 10px 50px;
+    border-radius: 30px;
+    background: var(--c1);
+    border: 1px solid var(--c1);
+}
+.changepass-form .button::before {
+    margin-right: 5px;
+    margin-right: 10px;
+    font-family: FontAwesome;
+}
+
+.userorder-form {
+    overflow: hidden;;
+    border-radius: 8px;
+}
+.userorder-form .table {
+    margin: 0;
+}
+.userorder-form .table th {
+    border: 0;
+    height: 45px;
+    color: white;
+    padding: 0 15px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--c1);
+    border-left: 1px solid white;
+}
+.userorder-form .table th.order_code {
+    border-left: 0;
+}
+.userorder-form .table td {
+    padding: 20px 15px;
+}
+.userorder-form .table tr.row-noitem td {
+    font-size: 16px;
+    text-align: center;
+    background-color: #fcf8e3;
+}
+.userorder-form .table tr:nth-child(even) td {
+    background: white;
+}
+.userorder-form .table .order_code {
+    font-weight: 700;
+}
+.userorder-form .table .order_cancel .fa {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* lostpass-form */
+.lostpass-form {
+	padding: 20px;
+	overflow: hidden;
+	border-radius: 8px;
+    background: white;
+	border: 1px solid #ddd;
+}
+.lostpass-form .entry {
+	max-width: 50%;
+	margin-bottom: 20px;
+}
+.lostpass-form .form-field {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 15px;
+}
+.lostpass-form .form-field .form-control {
+	float: left;
+	height: 40px;
+	border-radius: 0;
+	box-shadow: none;
+	border-radius: 8px;
+	margin-right: 10px;
+	appearance: none;
+	-webkit-appearance: none;
+}
+.lostpass-form .button {
+	float: left;
+    color: #fff;
+    height: 40px;
+    border: none;
+	outline: none;
+    padding: 0 20px;
+    line-height: 38px;
+    text-align: center;
+    background: var(--c1);
+    border-radius: 4px !important;
+}
+.lostpass-form .button::before {
+	font-size: 20px;
+    font-family: FontAwesome;
+}
+
+/* wishlist-form */
+.wishlist-form .products {
+    margin: 30px 0 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.wishlist-form .item {
+    padding: 30px;
+	border-bottom: 1px solid #ddd;
+}
+.wishlist-form .item:last-child {
+	border-bottom: 0;
+}
+.wishlist-form .item-body {
+	width: 100%;
+	display: table;
+}
+.wishlist-form .item-body li {
+	display: table-cell;
+	vertical-align: middle;
+}
+.wishlist-form .item-img {
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	position: relative;
+}
+.wishlist-form .item-name {
+	width: 40%;
+	padding: 20px;
+}
+.wishlist-form .item-cart {
+	padding: 20px;
+	font-size: 25px;
+	text-align: center;
+}
+.wishlist-form .item-cart a {
+	color: white;
+	width: 106px;
+	height: 40px;
+	cursor: pointer;
+	line-height: 40px;
+	line-height: 38px;
+	border-radius: 4px;
+	text-align: center;
+	background: var(--c1);
+	display: inline-block;
+	vertical-align: middle;
+	transition: all .3s ease;
+}
+.wishlist-form .item-cart span:hover {
+	background: var(--c2);
+}
+.wishlist-form .item-price {
+	width: 20%;
+	padding: 20px;
+}
+.wishlist-form .price-new {
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--c1);
+}
+.wishlist-form .price-old {
+	font-size: 12px;
+	display: inline;
+    text-decoration: line-through;
+}
+.wishlist-form .item-remove {
+	padding: 20px 0;
+	text-align: right;
+}
+.wishlist-form .item-remove .fa {
+	color: gray;
+	font-size: 25px;
+	cursor: pointer;
+}
+.wishlist-form .noitem {
+    margin: 0;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.box-info .socials #gg-login .abcRioButton {
+    overflow: hidden;
+    box-shadow: none;
+    border-radius: 100%;
+    background: url(../images/gg-login.png) no-repeat center center;
+    background-size: cover;
+}
+.box-info .socials #gg-login .abcRioButton>div {
+    display: none;
+}
+
+@media screen and (max-width: 767px)
+{
+    .ws-content {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+    .breadcrumb {
+        display: none;
+    }
+    .box,
+    #login-form,
+    #lostpass-form,
+    #register-form {
+        border-radius: 5px;
+    }
+    .box-title {
+        margin: 0;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .box-title .post-title h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+    .box-login {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-login .form-field {
+        display: grid;
+    }
+    .box-login .form-label {
+        width: 100%;
+    }
+    .box-login .content-left,
+    .box-login .content-right {
+        border: none;
+        padding: 15px;
+    }
+    .box-login .content-left {
+        border-right: 0;
+    }
+
+    .box-register .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-register .box .form-field {
+        display: grid;
+    }
+    .box-register .box .form-label {
+        width: 100%;
+    }
+    .box-register .box-foot,
+    .box-register .box .content-left,
+    .box-register .box .content-right {
+        border: none;
+        padding: 15px;
+    }
+    .box-register .box .content-left {
+        border-right: 0;
+        padding-bottom: 0;
+    }
+    .box-register .box .field-gender {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+    }
+    .box-register .box .field-gender .form-label {
+        margin: 0;
+        width: auto;
+    }
+    .box-register .box-foot .box-button {
+        gap: 20px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box-register .box-button .btn {
+        margin: 0;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .step-by-step {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .step-by-step li {
+        padding: 0;
+        text-align: center;
+    }
+    .step-by-step li:nth-child(2):before,
+    .step-by-step li:nth-child(2)::after,
+    .step-by-step li:nth-child(3):before,
+    .step-by-step li:nth-child(3)::after {
+        width: 250%;
+    }
+    .account-form {
+        overflow: hidden;
+        border-radius: 5px;
+        background: var(--bg);
+    }
+    .account-form .form-wrap {
+        display: grid;
+    }
+    .account-form .form-wrap .col-left,
+    .account-form .form-wrap .col-right {
+        width: 100%;
+    }
+    .account-form .account.col-right {
+        padding: 15px;
+    }
+    .account-form .button {
+        width: 100%;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .account-form .avatar {
+        background: none;
+        padding: 30px 30px 10px;
+    }
+    .account-form .form-row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .account-form .form-row .form-field {
+        padding: 0;
+        float: none;
+        width: initial;
+    }
+    .account-form .form-row .form-field:not(:last-child) {
+        margin-bottom: 15px !important;
+    }
+    .account-form .form-field .form-control {
+        padding-left: 30px;
+        border-radius: 5px;
+    }
+    .account-form .form-row .form-field::before {
+        left: 10px;
+    }
+    .changepass-form .form-wrap {
+        max-width: 100%;
+    }
+    .changepass-form .form-field {
+        gap: 5px;
+        display: grid;
+    }
+    .changepass-form .form-field .form-label,
+    .changepass-form .form-field .form-input {
+        width: 100%;
+    }
+    .box-login.box-info .socials {
+        margin-bottom: 0;
+    }
+    .box-login.box-info .socials .icon {
+        display: inline-block;
+    }
+    .box-login.box-info .socials .icon img {
+        margin: 0 5px;
+    }
+    .lostpass-form .entry {
+        max-width: 100%;
+    }
+    .lostpass-form .form-field:last-child {
+        margin-bottom: 0;
+    }
+    .lostpass-form .form-field .form-control {
+        width: calc(100% - 70px) !important;
+    }
+    .box-register .box-agree * {
+        text-align: left;
+    }
+    .changepass-form {
+        padding: 15px;
+        border-radius: 5px;
+        background: var(--bg);
+    }
+    .changepass-form .button {
+        width: 100%;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .userorder-form .table th {
+        text-transform: none;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .post-title h1 {
+        font-size: 24px;
+    }
+    .box-info .form-field:not(.last) {
+        margin-bottom: 15px;
+    }
+    .box-register .box-foot .box-button {
+        gap: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-register .box-button .btn-reset {
+        display: none;
+    }
+    .box-register .box-foot {
+        padding: 20px;
+    }
+    .step-by-step li {
+        max-width: 30%;
+        padding: 0 15px;
+    }
+}
+.hashtag::before {
+    content: "#";
+}
+
+.page-template-login .ws-content,
+.page-template-member .ws-content,
+.page-template-lostpass .ws-content,
+.page-template-register .ws-content,
+.page-template-userorder .ws-content,
+.page-template-changepass .ws-content {
+    background: white;
+}
+.page-template-login .breadcrumb,
+.page-template-member .breadcrumb,
+.page-template-lostpass .breadcrumb,
+.page-template-register .breadcrumb,
+.page-template-userorder .breadcrumb,
+.page-template-changepass .breadcrumb {
+    margin-bottom: 30px;
+    background: var(--bg);
+}
+
+#login-form,
+#lostpass-form,
+#register-form {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    background: var(--bg);
+}
+.field-solcial,
+.box-icon.socials {
+    display: none;
+}
+.tx-bold {
+    font-weight: 700;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0;
+}
+
+.gender-list,
+.gender-list div {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.gender-list {
+    gap: 30px;
+    min-height: 40px;
+}
+.gender-list input,
+.gender-list label {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.ws-content {
+    padding-bottom: 50px;
+}
+.box-title {
+    margin: 0 0 30px;
+    text-align: center;
+}
+.post-title h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.box {
+    display: grid;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box-info .content-left,
+.box-info .content-right {
+    padding: 30px;
+}
+.box-info .content-right {
+    border-left: 1px solid #d3d3d3;
+}
+.box-info .form-field {
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    position: relative;
+}
+.box-info .form-field:not(.last) {
+    margin-bottom: 20px;
+}
+.box-info .form-label {
+    width: 25%;
+    margin-bottom: 5px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.box-info .form-label label {
+    margin: 0;
+    cursor: pointer;
+    font-weight: 400;
+}
+.box-info .form-input {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+.box-info .form-control {
+    min-height: 40px;
+    box-shadow: none;
+    padding-left: 12px;
+    border-color: #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.box-info .form-control:focus {
+    border-color: #3091ed;
+}
+.box-info .required .form-label label::after {
+    content: "*";
+    color: #d0021b;
+    margin-left: 3px;
+}
+.box-info .rememberme {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.box-info .rememberme .form-label,
+.box-info .rememberme .form-input {
+    margin: 0;
+    width: 100%;
+}
+.box-info .rememberme .form-label {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.box-info .buttons button {
+    width: 100%;
+    background: var(--c1);
+    border: 0;
+    color: white;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid var(--c1);
+}
+.box-info .buttons button:hover {
+    color: var(--c1);
+    background: white;
+}
+.box-info .socials {
+    margin: 40px 0 0;
+}
+.box-info .socials .line {
+    position: relative;
+    margin: 0 0 15px;
+}
+.box-info .socials .line::after {
+    top: 50%;
+    left: 0;
+    right: 0;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #d3d3d3;
+}
+.box-info .socials .line span {
+    display: inline-flex;
+    align-items: center;
+    background: var(--bg);
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    padding: 0 15px;
+}
+.box-info .socials .icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+.box-info .socials .icon img {
+    cursor: pointer;
+}
+#login-form .box-login .buttons {
+    margin-bottom: 0;
+}
+.not-register #login-form {
+    margin: auto;
+    max-width: 50%;
+}
+.not-register .box-login {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.box-note {
+    position: relative;
+}
+.box-note h3 {
+    font-size: 18px;
+    margin: 0 0 20px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.box-note ul {
+    list-style: none;
+    margin: 0 0 30px;
+}
+.box-note ul li:not(:last-child) {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.box-note ul li::before {
+    color: gray;
+    content: "\f00c";
+    margin-right: 10px;
+    font-family: "FontAwesome";
+}
+.box-note .btn-link a {
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 30px;
+    padding: 10px 50px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--c0);
+    background-color: var(--c2);
+    border: 1px solid var(--c2);
+    transition: all .3s ease;
+}
+.box-note .btn-link:focus,
+.box-note .btn-link:hover {
+    text-decoration: none;
+}
+.box-note .btn-link a:hover {
+    color: white;
+    background-color: var(--c1);
+    border: 1px solid var(--c1);
+}
+
+.box-register {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #d3d3d3;
+}
+.box-register .box {
+    border: 0;
+    border-radius: 0;
+}
+.box-register .box-foot {
+    padding: 30px;
+}
+.box-register .box-agree {
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    display: inline-flex;
+}
+.box-register .box-agree * {
+    margin: 0;
+    font-weight: 400;
+}
+.box-register .box-button .btn {
+    color: white;
+    margin: 0 12px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 10px 50px;
+    background: var(--c1);
+    text-transform: none;
+    border-radius: 30px;
+}
+.box-register .box-button .btn-reset {
+    color: gray;
+    background-color: #e9edf0;
+}
+.box-register .box-button .btn-reset::before {
+    content: "\f021";
+    font-weight: 400;
+    margin-right: 5px;
+    font-family: "FontAwesome";
+}
+.box-register .box-button .btn:hover {
+    color: white;
+    background: var(--c1);
+}
+.box-register .socials {
+    padding: 0 0 20px;
+    background: #f6f7f8;
+}
+.box-register .socials .line {
+    margin: 0 0 15px;
+    position: relative;
+}
+.box-register .socials .line span {
+    font-weight: 700;
+    align-items: center;
+    display: inline-flex;
+}
+.box-register .socials .icon {
+    gap: 20px;
+    align-items: center;
+    display: inline-flex;
+}
+.box-register .socials .icon * {
+    cursor: pointer;
+}
+
+.form-field select.form-control {
+	height: 40px;
+    text-indent: 30px;
+    padding-left: 0 !important;
+}
+
+.account-form {
+    overflow: hidden;
+    position: relative;
+	border-radius: 8px;
+    background: var(--bg);
+}
+.account-form .form-wrap {
+	width:100%;
+	display:table;
+	overflow:hidden;
+}
+.account-form .form-wrap .col-left,
+.account-form .form-wrap .col-right {
+	display:table-cell;
+	vertical-align:top;
+}
+.account-form .form-wrap .col-left {
+	width: 300px;
+	text-align: center;
+}
+.account-form .form-field {
+	overflow:hidden;
+	position:relative;
+	margin-bottom:10px;
+}
+.account-form .form-field .form-control {
+	height: 40px;
+	box-shadow: none;
+	border-radius: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.account-form .form-field::before {
+	top:10px;
+	left:10px;
+	color:#999999;
+	position:absolute;
+	font-family:FontAwesome;
+}
+.account-form .form-field {
+	margin-bottom: 15px;
+}
+.account-form .form-field .form-control {
+	padding-left:30px;
+}
+.account-form .form-row {
+	overflow: hidden;
+	margin-left: -10px;
+	margin-bottom: 15px;
+	margin-right: -10px;
+}
+.account-form .form-row .form-field {
+	margin-bottom:0 !important;
+	width:50%;
+	float:left;
+	padding:0 10px;
+}
+.account-form select.form-control {
+	height: 40px;
+}
+.account-form .form-row .form-field::before {
+	left:20px;
+}
+.account-form .col-left {
+	padding: 40px;
+	background: #f5f5f5;
+}
+.account-form .avatar {
+    gap: 15px;
+    display: grid;
+    align-items: center;
+}
+.account-form .avatar-img {
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    border-radius: 100%;
+    overflow: hidden;
+	position:relative;
+}
+.account-form .avatar-img img {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+	-webkit-transform:translate(-50%, -50%);
+	max-width:100%;
+	max-height:100%;
+}
+.account-form .account.col-right {
+	padding: 30px;
+	position: relative;
+}
+.account-form .avatar .username {
+	font-size: 20px;
+	font-weight: 700;
+}
+.account-form #btn-avatar {
+	margin: 0;
+    border: none;
+    outline: none;
+    color: white;
+    line-height: 20px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background: var(--c1);
+}
+.account-form #btn-avatar::before {
+	margin-right:5px;
+	font-family:FontAwesome;
+}
+.account-form .form-field.form-button {
+	margin-bottom:0 !important;
+}
+.account-form .button {
+    color: white;
+    font-weight: 700;
+    padding: 10px 50px;
+    border-radius: 30px;
+    background: var(--c1);
+    border: 1px solid var(--c1);
+}
+.account-form .button::before {
+    margin-right: 5px;
+    margin-right: 10px;
+    font-family: FontAwesome;
+}
+
+/* step-by-step style	 */
+.step-by-step {
+    text-align: center;
+}
+.step-by-step li {
+    padding: 0 25px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.step-by-step li:nth-child(2):before,
+.step-by-step li:nth-child(2)::after,
+.step-by-step li:nth-child(3):before,
+.step-by-step li:nth-child(3)::after {
+    top: 30%;
+    content: '';
+    height: 1px;
+    width: 200%;
+    display: block;
+    position: absolute;
+    background-color: darkgray;
+    transform: translate(-35%, -50%);
+}
+.step-by-step li a {
+    z-index: 20;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 60px;
+    position: relative;
+}
+.step-by-step li a::before {
+    top: 0;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    font-size: 20px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    background: white;
+    left: calc(50% - 25px);
+    font-family: "FontAwesome";
+    border: 1px solid darkgray;
+}
+.step-by-step li a:hover::before,
+.step-by-step li a.active::before {
+    color: white;
+    background: var(--c1);
+    border-color: var(--c1);
+}
+.step-by-step li a.icon-account::before {
+    content: '\f2bd';
+}
+.step-by-step li a.icon-changepass::before {
+    content: '\f084';
+}
+.step-by-step li a.icon-userorder::before {
+    content: '\f0ca';
+}
+
+.changepass-form {
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+	border-radius: 8px;
+    background: var(--bg);
+}
+.changepass-form .form-wrap {
+    gap: 15px;
+    margin: auto;
+    display: grid;
+	max-width: 50%;
+}
+.changepass-form .form-field {
+	display: flex;
+    align-items: center;
+}
+.changepass-form .form-field .form-label {
+    width: 160px;
+}
+.changepass-form .form-field .form-label label {
+    margin: 0;
+    font-weight: 400;
+}
+.changepass-form .form-field .form-input {
+    width: calc(100% - 160px);
+}
+.changepass-form .form-field .form-control {
+	height: 40px;
+	box-shadow: none;
+	border-radius: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.changepass-form .button {
+    color: white;
+    font-weight: 700;
+    padding: 10px 50px;
+    border-radius: 30px;
+    background: var(--c1);
+    border: 1px solid var(--c1);
+}
+.changepass-form .button::before {
+    margin-right: 5px;
+    margin-right: 10px;
+    font-family: FontAwesome;
+}
+
+.userorder-form {
+    overflow: hidden;;
+    border-radius: 8px;
+}
+.userorder-form .table {
+    margin: 0;
+}
+.userorder-form .table th {
+    border: 0;
+    height: 45px;
+    color: white;
+    padding: 0 15px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--c1);
+    border-left: 1px solid white;
+}
+.userorder-form .table th.order_code {
+    border-left: 0;
+}
+.userorder-form .table td {
+    padding: 20px 15px;
+}
+.userorder-form .table tr.row-noitem td {
+    font-size: 16px;
+    text-align: center;
+    background-color: #fcf8e3;
+}
+.userorder-form .table tr:nth-child(even) td {
+    background: white;
+}
+.userorder-form .table .order_code {
+    font-weight: 700;
+}
+.userorder-form .table .order_cancel .fa {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* lostpass-form */
+.lostpass-form {
+	padding: 20px;
+	overflow: hidden;
+	border-radius: 8px;
+    background: white;
+	border: 1px solid #ddd;
+}
+.lostpass-form .entry {
+	max-width: 50%;
+	margin-bottom: 20px;
+}
+.lostpass-form .form-field {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 15px;
+}
+.lostpass-form .form-field .form-control {
+	float: left;
+	height: 40px;
+	border-radius: 0;
+	box-shadow: none;
+	border-radius: 8px;
+	margin-right: 10px;
+	appearance: none;
+	-webkit-appearance: none;
+}
+.lostpass-form .button {
+	float: left;
+    color: #fff;
+    height: 40px;
+    border: none;
+	outline: none;
+    padding: 0 20px;
+    line-height: 38px;
+    text-align: center;
+    background: var(--c1);
+    border-radius: 4px !important;
+}
+.lostpass-form .button::before {
+	font-size: 20px;
+    font-family: FontAwesome;
+}
+
+/* wishlist-form */
+.wishlist-form .products {
+    margin: 30px 0 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.wishlist-form .item {
+    padding: 30px;
+	border-bottom: 1px solid #ddd;
+}
+.wishlist-form .item:last-child {
+	border-bottom: 0;
+}
+.wishlist-form .item-body {
+	width: 100%;
+	display: table;
+}
+.wishlist-form .item-body li {
+	display: table-cell;
+	vertical-align: middle;
+}
+.wishlist-form .item-img {
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	position: relative;
+}
+.wishlist-form .item-name {
+	width: 40%;
+	padding: 20px;
+}
+.wishlist-form .item-cart {
+	padding: 20px;
+	font-size: 25px;
+	text-align: center;
+}
+.wishlist-form .item-cart a {
+	color: white;
+	width: 106px;
+	height: 40px;
+	cursor: pointer;
+	line-height: 40px;
+	line-height: 38px;
+	border-radius: 4px;
+	text-align: center;
+	background: var(--c1);
+	display: inline-block;
+	vertical-align: middle;
+	transition: all .3s ease;
+}
+.wishlist-form .item-cart span:hover {
+	background: var(--c2);
+}
+.wishlist-form .item-price {
+	width: 20%;
+	padding: 20px;
+}
+.wishlist-form .price-new {
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--c1);
+}
+.wishlist-form .price-old {
+	font-size: 12px;
+	display: inline;
+    text-decoration: line-through;
+}
+.wishlist-form .item-remove {
+	padding: 20px 0;
+	text-align: right;
+}
+.wishlist-form .item-remove .fa {
+	color: gray;
+	font-size: 25px;
+	cursor: pointer;
+}
+.wishlist-form .noitem {
+    margin: 0;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.box-info .socials #gg-login .abcRioButton {
+    overflow: hidden;
+    box-shadow: none;
+    border-radius: 100%;
+    background: url(../images/gg-login.png) no-repeat center center;
+    background-size: cover;
+}
+.box-info .socials #gg-login .abcRioButton>div {
+    display: none;
+}
+
+@media screen and (max-width: 767px)
+{
+    .ws-content {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+    .breadcrumb {
+        display: none;
+    }
+    .box,
+    #login-form,
+    #lostpass-form,
+    #register-form {
+        border-radius: 5px;
+    }
+    .box-title {
+        margin: 0;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .box-title .post-title h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+    .box-login {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-login .form-field {
+        display: grid;
+    }
+    .box-login .form-label {
+        width: 100%;
+    }
+    .box-login .content-left,
+    .box-login .content-right {
+        border: none;
+        padding: 15px;
+    }
+    .box-login .content-left {
+        border-right: 0;
+    }
+
+    .box-register .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-register .box .form-field {
+        display: grid;
+    }
+    .box-register .box .form-label {
+        width: 100%;
+    }
+    .box-register .box-foot,
+    .box-register .box .content-left,
+    .box-register .box .content-right {
+        border: none;
+        padding: 15px;
+    }
+    .box-register .box .content-left {
+        border-right: 0;
+        padding-bottom: 0;
+    }
+    .box-register .box .field-gender {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+    }
+    .box-register .box .field-gender .form-label {
+        margin: 0;
+        width: auto;
+    }
+    .box-register .box-foot .box-button {
+        gap: 20px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box-register .box-button .btn {
+        margin: 0;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .step-by-step {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .step-by-step li {
+        padding: 0;
+        text-align: center;
+    }
+    .step-by-step li:nth-child(2):before,
+    .step-by-step li:nth-child(2)::after,
+    .step-by-step li:nth-child(3):before,
+    .step-by-step li:nth-child(3)::after {
+        width: 250%;
+    }
+    .account-form {
+        overflow: hidden;
+        border-radius: 5px;
+        background: var(--bg);
+    }
+    .account-form .form-wrap {
+        display: grid;
+    }
+    .account-form .form-wrap .col-left,
+    .account-form .form-wrap .col-right {
+        width: 100%;
+    }
+    .account-form .account.col-right {
+        padding: 15px;
+    }
+    .account-form .button {
+        width: 100%;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .account-form .avatar {
+        background: none;
+        padding: 30px 30px 10px;
+    }
+    .account-form .form-row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .account-form .form-row .form-field {
+        padding: 0;
+        float: none;
+        width: initial;
+    }
+    .account-form .form-row .form-field:not(:last-child) {
+        margin-bottom: 15px !important;
+    }
+    .account-form .form-field .form-control {
+        padding-left: 30px;
+        border-radius: 5px;
+    }
+    .account-form .form-row .form-field::before {
+        left: 10px;
+    }
+    .changepass-form .form-wrap {
+        max-width: 100%;
+    }
+    .changepass-form .form-field {
+        gap: 5px;
+        display: grid;
+    }
+    .changepass-form .form-field .form-label,
+    .changepass-form .form-field .form-input {
+        width: 100%;
+    }
+    .box-login.box-info .socials {
+        margin-bottom: 0;
+    }
+    .box-login.box-info .socials .icon {
+        display: inline-block;
+    }
+    .box-login.box-info .socials .icon img {
+        margin: 0 5px;
+    }
+    .lostpass-form .entry {
+        max-width: 100%;
+    }
+    .lostpass-form .form-field:last-child {
+        margin-bottom: 0;
+    }
+    .lostpass-form .form-field .form-control {
+        width: calc(100% - 70px) !important;
+    }
+    .box-register .box-agree * {
+        text-align: left;
+    }
+    .changepass-form {
+        padding: 15px;
+        border-radius: 5px;
+        background: var(--bg);
+    }
+    .changepass-form .button {
+        width: 100%;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .userorder-form .table th {
+        text-transform: none;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .post-title h1 {
+        font-size: 24px;
+    }
+    .box-info .form-field:not(.last) {
+        margin-bottom: 15px;
+    }
+    .box-register .box-foot .box-button {
+        gap: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-register .box-button .btn-reset {
+        display: none;
+    }
+    .box-register .box-foot {
+        padding: 20px;
+    }
+    .step-by-step li {
+        max-width: 30%;
+        padding: 0 15px;
+    }
+}

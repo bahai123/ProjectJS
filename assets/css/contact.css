@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+.ws-content {
+    padding-bottom: 50px;
+}
+.post-title {
+    text-align: center;
+}
+.post-title h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+.entry {
+    padding: 30px 0;
+}
+.entry .icons {
+    gap: 20px;
+    margin: 0;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(2, 1fr);
+}
+.entry .icons br {
+    display: none;
+}
+.entry .icons li {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 55px;
+    position: relative;
+}
+.entry .icons li p {
+    margin: 0;
+}
+.entry .icons li strong {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    text-transform: uppercase;
+}
+.entry .icons li:before {
+    content: "\f041";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--c1);
+    border: none;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    font-family: "FontAwesome";
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+.entry .icons li.icon-2:before,
+.entry .icons li.icon-3:before {
+    content: "\f095";
+}
+.entry .icons li.icon-4:before {
+    content: "\f0e0";
+}
+
+.locations {
+    gap: 30px;
+    display: grid;
+    text-align: center;
+    margin-bottom: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.locations .location {
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: white;
+    border: 1px solid white;
+}
+.locations .location.active {
+    border-color: var(--c1);
+}
+.locations .location .title {
+    gap: 10px;
+    font-size: 20px;
+    color: var(--c1);
+    margin-bottom: 5px;
+    align-items: center;
+    display: inline-flex;
+    vertical-align: middle;
+}
+.locations .location .title::before {
+    content: "\f041";
+    font-family: "FontAwesome";
+}
+
+@media screen and (max-width: 767px)
+{
+    .entry .icons {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .entry .icons li:before {
+        top: 15px;
+        transform: none;
+    }
+    .entry .icons li:before {
+        top: 0;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .post-title h1 {
+        font-size: 24px;
+    }
+    .entry {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .ws-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .locations {
+        gap: 10px;
+        display: grid;
+        text-align: center;
+        margin-bottom: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #map {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .ws-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
